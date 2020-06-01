@@ -46,7 +46,7 @@ module.exports = {
   lintOnSave: false, // 关闭eslint
   productionSourceMap: false,
   publicPath: './',
-  outputDir: process.env.outputDir, // 生成文件的目录名称
+  outputDir: process.env.outputDir, // 生成文件的目录名称'dist/' + process.env.NODE_ENV,
   devServer: {
     open: false, // 自动启动浏览器
     host: '0.0.0.0', // localhost
